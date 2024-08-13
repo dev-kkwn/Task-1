@@ -40,6 +40,7 @@ export function SignUp() {
                   id="username"
                   value={RegisterData.userName}
                   onChange={handleChange}
+                  required
                   className="block w-72 py-2.5 px-0 text-sm text-white bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
                   placeholder=" "
                 />
@@ -57,6 +58,7 @@ export function SignUp() {
                   id="email"
                   value={RegisterData.email}
                   onChange={handleChange}
+                  required
                   className="block w-72 py-2.5 px-0 text-sm text-white bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
                   placeholder=" "
                 />
@@ -74,6 +76,7 @@ export function SignUp() {
                   id="username"
                   value={RegisterData.phoneNumber}
                   onChange={handleChange}
+                  required
                   className="block w-72 py-2.5 px-0 text-sm text-white bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
                   placeholder=" "
                 />
@@ -91,6 +94,7 @@ export function SignUp() {
                   id="password"
                   value={RegisterData.password}
                   onChange={handleChange}
+                  required
                   className="block w-72 py-2.5 px-0 text-sm text-white bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
                   placeholder=" "
                 />
@@ -101,7 +105,7 @@ export function SignUp() {
                   Password
                 </label>
               </div>
-              <Link>
+              <Link to="/">
                 {" "}
                 <button
                   type="submit"
