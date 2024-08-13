@@ -5,7 +5,7 @@ import { SignUp } from "./Signup";
 
 function Login() {
   const [formData, setFormData] = useState({
-    username: "",
+    userName: "",
     password: "",
   });
 
@@ -22,7 +22,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${apiUrl}`, formData)
+      .post(`${apiUrl}/login`, formData)
       .then((res) => {
         console.log("Login successful", res.data);
       })
@@ -42,9 +42,9 @@ function Login() {
             <input
               required
               type="text"
-              name="username"
+              name="userName"
               id="username"
-              value={formData.username}
+              value={formData.userName}         
               onChange={handleChange}
               className="block w-72 py-2.5 px-0 text-sm text-white bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
               placeholder=" "
